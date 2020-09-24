@@ -1,0 +1,325 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 15px;
+}
+
+/* code general */
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: initial;
+}
+
+.container{
+    width: 55%;
+    margin: auto;
+}
+
+
+/* navigation */
+
+.navigation{
+    position: fixed;
+    width: 100%;
+}
+
+.box-navigation{
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-navigation .logo{
+    height: 40px;
+}
+
+.box-navigation li{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.box-navigation li a{
+    color: white;
+}
+
+
+/* header */
+
+.header{
+    height: 70vh;
+    background-image: url("../images/header-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.header h3{
+    color: white;
+    font-size: 35px;
+}
+
+.header h1{
+    color: white;
+    font-size: 60px;
+    text-transform: capitalize;
+    margin: 20px 0;
+}
+
+.header .header-content button{
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color:#5c8fff;
+    color: white;
+    border: 1px solid transparent;
+    font-size:18px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.header .header-content button:focus{
+    outline: none;
+}
+
+.header .header-content button:hover{
+    box-shadow: 1px 1px 8px #bbbbbb;
+}
+
+/* section services */
+
+.services{
+    min-height: 100px;
+    background-color: rgba(206, 206, 206, 0.363);
+    padding: 50px 0;
+}
+
+.box-service{
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-service-item{
+    flex: 1;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.card-service{
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 1px 1px 15px 9px #dedede;
+    border-radius: 3px;
+}
+
+.card-service .card-head{
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.card-service .card-head p{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.card-service .card-head p img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* section equipe */
+.equipes{
+    padding: 70px 0;
+}
+
+.equipe-head{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.equipe-head h3{
+    font-size: 30px;
+}
+
+.equipe-head h1{
+    margin: 20px 0;
+    font-size: 60px;
+}
+
+.equipe-head p{
+    font-size: 20px;
+}
+
+.box-equipe-item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.block-card-equipe{
+    min-height: 300px;
+    width: 30%;
+    display: inline-block;
+}
+
+.card-equipe{
+    height: 400px;
+    position: relative;
+}
+
+.card-equipe .photo-equipe{
+    height: 100%;
+}
+
+.card-equipe .photo-equipe img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-equipe .caret{
+    background-color: aqua;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-equipe .caret img{
+    height: 25px;
+    transform: rotate(-135deg);
+}
+
+.card-equipe .prenoms{
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom : 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+}
+
+.block-card-equipe .noms{
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+/* section appel a l'action */
+
+.appel-action{
+    min-height: 200px;
+    padding: 50px 0;
+    background: url("../images/bg.jpeg") no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.action {
+    text-align: center;
+}
+
+.action h2{
+    margin: 10px;
+}
+
+.action p{
+    margin-bottom: 10px;
+}
+
+.action button{
+    padding: 10px 30px;
+    background-color: purple;
+    border-radius: 30px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    color: white;
+}
+
+.action button:focus{
+    outline: none;
+}
+
+/* section contact */
+
+.contact{
+    padding: 50px 0;
+}
+
+.contact .box-contact{
+    display: flex;
+
+}
+
+.contact-text {
+    text-align: center;
+    padding: 0 20px;
+    flex: 1;
+}
+
+.contact-text h3{
+    margin: 20px 0;
+}
+
+.contact-form {
+    box-shadow: 0px 0px 20px #eaeaea;
+    padding: 40px;
+    width: 40%;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.contact-form button{
+    padding: 10px 30px;
+    border-radius: 5px;
+    background-color: #5c8fff;
+    color: white;
+    border: 1px solid transparent;
+}
+
+/* footer */
+
+.footer{
+    min-height: 30px;
+    background-color: black;
+    padding: 50px 0;
+    color: white;
+}
+
+.box-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-footer .footer-element{
+    flex: 1;
+}
+
+.box-footer .footer-element-milieu{
+    flex: 2;
+}
